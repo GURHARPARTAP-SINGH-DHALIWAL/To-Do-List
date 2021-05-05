@@ -108,6 +108,7 @@ input:hover{
 }
 #outerdiv{
     width: 100%;
+    display: inline-block;
     height: 40px;
     margin-top: 9px;
 }
@@ -116,14 +117,16 @@ input:hover{
     padding: 2px;
 
     
-    
+    border-radius: 10%;
     height: 100%;
-    left: 20%;
+    left: 35%;
     width: 25%;
     background-color: grey;
     outline: none;
     padding: 3px;
     border:0;
+    margin-bottom: 10px;
+    margin-top: 10px;
     
 }
 #delete{
@@ -138,13 +141,16 @@ input:hover{
 #del{
     /* width: 100%;
     height: 100%; */
-    height: 70%;
-    padding-top: 8px;
+    height: 27px;
+    padding-top: 16px;
     position: relative;
-    left: 27%;
-    width: 27%;
+    
+    width: 100%;
     padding-left: 7px;
     background-color: red;
+    border-radius: 10%;
+
+    
 }
 #tasks{
     display: flex;
@@ -152,4 +158,68 @@ input:hover{
     flex-wrap: wrap;
     border-top:black 2px solid;
     width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#i_desc{
+    display: inline-block;
+    position: relative;
+    color: #535050;
+    font-weight: bold;
+    left: 5%;
+}
+#i_cat{
+    display: inline-block;
+    color: #535050;
+    position: absolute;
+    font-weight: bold;
+    left: 83%;
+    height: auto;
+    width: auto;
+    padding: 5px;
+    background-color: indianred;
+    border-radius: 10%;
+}
+#i_cat:nth-child(2n){
+    background-color: indianred;
+}
+#i_cat:nth-child(n+3){
+    background-color:#f7c440;
+}
+#chk{
+    margin-left: 10px;
+    margin-right: 3px;
+}
+#i_date{
+    position: relative;
+    color: grey;
+    left: 10%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/* #icocal{
+    position: relative;
+    left: 11%;
+} */
+#main{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+#chkbtn{
+    position: relative;
+    padding: 2px;
+
+    
+    border-radius: 10%;
+    height: 100%;
+    left: 35%;
+    width: 25%;
+    
+    outline: none;
+    padding: 3px;
+    border:0;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }

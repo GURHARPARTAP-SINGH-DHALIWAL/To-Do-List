@@ -41,7 +41,10 @@ app.post('/add',function(req,res){
         return res.redirect('back');
     });
 });
-
+app.get('/delete',function(req,res){
+    console.log(req.body.task);
+    return res.redirect('back');
+});
 app.listen(port,function(err){
     if(err)
     {
