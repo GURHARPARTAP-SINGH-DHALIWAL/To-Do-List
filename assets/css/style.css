@@ -1,0 +1,100 @@
+#title{
+    color: grey;
+    position: relative;
+    left: 37%;
+    font-weight: 200;
+}
+body{
+    background-color:grey;
+}
+#outer{
+
+    /* display: flex;
+    flex-direction: row; */
+    position: relative;
+    left: 33%;
+    /* border: violet 3px solid ; */
+    padding: 3px;
+    width: 40%;
+    min-height: 300px;
+    background-color: white;
+}
+#form{
+    width: 100%;
+    margin-top: 50px;
+}
+#desc{
+    border-top: 2px solid black;
+    padding: 4px;
+    width: 96%;
+
+}
+#desc1{
+    display: inline-block;
+    border:0;
+    height: 30px;
+    position: relative;
+    left: 1.5%;
+    /* border-top: 2px solid black; */
+    border-bottom: 2px solid black;
+    width: 97%;
+    padding: 5px;
+    
+}
+#lab1{
+    color: grey;
+    font-size:medium ;
+    font-family: 'Times New Roman', Times, serif;
+}
+#lab2{
+    display: inline-block;
+    width: 49%;
+    position: relative;
+    left: 1.2%;
+    color: grey;
+    font-size:medium ;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+#lab3{
+    display: inline-block;
+    width: 49%;
+    color: grey;
+    font-size:medium ;
+    font-family: 'Times New Roman', Times, serif;
+}
+input:focus{
+    outline: none;
+  
+}
+
+#desc:hover{
+    background-color: lightgray;
+}
+input:hover{
+    background-color: lightgray;
+}
+
+#dropdown{
+    width: 49%;
+    outline: none;
+    border:0;
+    font-size: medium;
+    color:grey;
+    height: 30px;
+    border-right: 2px solid grey;
+    padding-bottom: 5px;
+   
+  
+}
+#date{
+    width: 49%;
+    outline: none;
+    border:0;
+    font-size: medium;
+    color: grey;
+    height: 30px;
+    padding-bottom: 5px;
+   
+  
+}

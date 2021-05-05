@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+     
+      <div id="outer">
+        <h1 id="title">TODO App</h1>
+      <form action="" method="POST" id="form">
+          
+          <div id="desc">
+              <label for="desc1" id="lab1">DESCRIPTION</label>
+              <input id="desc1" type="text" name="description" placeholder="What Do You Want To Do?" required></div>
+              <label for="dropdown" id="lab2">CATEGORY</label>
+              <label for="date" id="lab3">DUE DATE</label>
+          <select name="type" id="dropdown" required>
+            <option value="" disabled selected>Choose a Category</option>
+            <option value="personal">Personal</option>
+            <option value="work">Work</option>
+            <option value="school">School</option>
+            <option value="other">Other</option>
+          </select>
+          <input type="date" name="date" id="date" required>
+          <button type="submit"></button>
+         
+      </form>
+      </div>
+
+</body>
+</html>
