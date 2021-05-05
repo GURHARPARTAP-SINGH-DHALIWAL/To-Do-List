@@ -13,7 +13,7 @@
      
       <div id="outer">
         <h1 id="title">TODO App</h1>
-      <form action="" method="POST" id="form">
+      <form action="/add" method="POST" id="form">
           
           <div id="desc">
               <label for="desc1" id="lab1">DESCRIPTION</label>
@@ -22,15 +22,20 @@
               <label for="date" id="lab3">DUE DATE</label>
           <select name="type" id="dropdown" required>
             <option value="" disabled selected>Choose a Category</option>
-            <option value="personal">Personal</option>
-            <option value="work">Work</option>
-            <option value="school">School</option>
-            <option value="other">Other</option>
+            <option value="Personal">Personal</option>
+            <option value="Work">Work</option>
+            <option value="School">School</option>
+            <option value="Other">Other</option>
           </select>
           <input type="date" name="date" id="date" required>
-          <button type="submit"></button>
-         
+          <div id="outerdiv">
+          <button type="submit" id="btn1"><i class="fas fa-plus" id="btn" >Add Task</i></button>
+         <a> <i class="fas fa-trash-alt" id="del">DELETE TASKS</i></a>
+         </div>
       </form>
+      </div>
+      <div id="tasks">
+
       </div>
 
 </body>
