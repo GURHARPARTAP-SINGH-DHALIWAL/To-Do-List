@@ -5,7 +5,8 @@
     font-weight: 200;
 }
 body{
-    background-color:grey;
+    background: rgb(174,177,238);
+    background: radial-gradient(circle, rgba(174,177,238,1) 0%, rgba(17,15,16,0.9640231092436975) 22%);
 }
 #outer{
 
@@ -43,8 +44,9 @@ body{
     
 }
 #lab1{
-    color: grey;
+    color: rgb(71, 70, 70);
     font-size:medium ;
+    font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
 #lab2{
@@ -52,16 +54,18 @@ body{
     width: 49%;
     position: relative;
     left: 1.2%;
-    color: grey;
+    color: rgb(65, 64, 64);
     font-size:medium ;
+    font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     
 }
 #lab3{
     display: inline-block;
     width: 49%;
-    color: grey;
+    color: rgb(63, 61, 61);
     font-size:medium ;
+    font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
 input:focus{
@@ -80,7 +84,7 @@ input:hover{
     width: 49%;
     outline: none;
     border:0;
-    font-size: medium;
+    font-size: small;
     color:grey;
     height: 30px;
     border-right: 2px solid grey;
