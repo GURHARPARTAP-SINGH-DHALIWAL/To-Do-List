@@ -41,8 +41,19 @@ app.post('/add',function(req,res){
         return res.redirect('back');
     });
 });
-app.get('/delete',function(req,res){
-    console.log(req.body.task);
+app.post('/delete',function(req,res){
+    for(i of req.body.task)
+    {
+        doList.findByIdAndDelete(i,function(err){
+            if(err)
+            {
+                console.log(`Error : In Deleting ${err}`);
+                return ;
+            }
+            // return res.redirect('back');    
+        });
+        console.log(i);
+    }
     return res.redirect('back');
 });
 app.listen(port,function(err){

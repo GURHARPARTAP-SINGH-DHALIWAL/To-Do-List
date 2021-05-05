@@ -33,12 +33,12 @@
         
          </div>
       </form>
-      <form method ="GET" action="/delete">
-        <button id= "chkbtn"type="submit"> <i class="fas fa-trash-alt" id="del">DELETE TASKS</i></button>
+      <form method ="POST" action="/delete">
+        <button id= "chkbtn" type="submit"> <i class="fas fa-trash-alt" id="del">DELETE TASKS</i></button>
       <div id="tasks">
 <%for(i of dolist){%>
         <div id="main">
-        <input type="checkbox" name="task" id="chk" value= "<%=i._id%>"" >
+        <input type="checkbox" name="task" id="chk" value= <%=i._id%> >
         <div id="i_desc"><%=i.description%></div>
         <div id="i_cat"><%=i.category%></div>
             <%
