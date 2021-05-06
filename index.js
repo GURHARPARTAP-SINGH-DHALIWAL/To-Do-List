@@ -1,5 +1,6 @@
 const express=require('express');
 const port=8000;
+//DB Schema and connection
 const db=require('./config/mongoose');
 const doList=require('./models/ToDoDB');
 const app=express();
@@ -26,6 +27,7 @@ app.get('/',function(req,res){
         });
     });
 });
+//Adding tasks
 app.post('/add',function(req,res){
     doList.create({
         description:req.body.description,
@@ -41,6 +43,7 @@ app.post('/add',function(req,res){
         return res.redirect('back');
     });
 });
+//Deleting Tasks
 app.post('/delete',function(req,res){
     for(i of req.body.task)
     {
