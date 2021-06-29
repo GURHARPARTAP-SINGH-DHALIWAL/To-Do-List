@@ -45,6 +45,20 @@ app.post('/add',function(req,res){
 });
 //Deleting Tasks
 app.post('/delete',function(req,res){
+  
+    if(!Array.isArray(req.body.task))
+    {
+        doList.findByIdAndDelete(req.body.task,function(err){
+            if(err)
+            {
+                console.log(`Error : In Deleting ${err}`);
+                return ;
+            }
+            // 
+            // return res.redirect('back');    
+        });
+    }
+    {
     for(i of req.body.task)
     {
         doList.findByIdAndDelete(i,function(err){
@@ -57,6 +71,7 @@ app.post('/delete',function(req,res){
         });
         console.log(i);
     }
+}
     return res.redirect('back');
 });
 app.listen(port,function(err){
